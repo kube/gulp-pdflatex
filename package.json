@@ -16,14 +16,12 @@
     "prepublish": "tsc"
   },
   "devDependencies": {
-    "@types/gulp-util": "^3.0.29",
     "@types/node": "6.0.51",
     "@types/through2": "^2.0.32",
     "@types/vinyl": "^2.0.0",
-    "typescript": "^2.0.10"
+    "typescript": "2.1.1"
   },
   "dependencies": {
-    "gulp-util": "^3.0.7",
     "node-pdflatex": "^0.1.0",
     "through2": "^2.0.3"
   }
