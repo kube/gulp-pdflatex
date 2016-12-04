@@ -8,7 +8,7 @@
      ## ## ## :##
       ## ## ##*/
 
-import { join, dirname, basename, extname } from 'path'
+import { join, resolve, dirname, basename, extname } from 'path'
 import through = require('through2')
 import File = require('vinyl')
 import pdflatex from 'node-pdflatex'
@@ -32,9 +32,8 @@ const gulpPdflatex = (options: Options): NodeJS.ReadableStream =>
       file.contents = pdflatex(
         file.contents,
         {
-          cwd: file.dirname,
-          texInputs: options.texInputs,
-          shellEscape: options.shellEscape
+          shellEscape: options.shellEscape,
+          texInputs: [file.base, ...options.texInputs],
         }
       )
     }
