@@ -18,12 +18,14 @@
   },
   "devDependencies": {
     "@types/node": "6.0.51",
+    "@types/raw-body": "^2.1.0",
     "@types/through2": "^2.0.32",
     "@types/vinyl": "^2.0.0",
     "typescript": "2.1.1"
   },
   "dependencies": {
-    "node-pdflatex": "^0.1.1",
+    "node-pdflatex": "^0.2.0",
+    "raw-body": "^2.1.7",
     "through2": "^2.0.3"
   }
 }
